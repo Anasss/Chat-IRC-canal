@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <title>Chat IRC</title>
+      
+    </head>
+ 
+    <body>
+        <h1>Chat IRC : Venez chattez :D </h1>
+
+<p>Selectionner groupe
+       
+       <select name="Canaux" id="groupe_choisi">
+           <option value="Canal 1">Canal 1</option>
+           <option value="Canal 2">Canal 2</option>
+           <option value="Canal 3">Canal 3</option>
+           
+                   
+</select>
+<input type="button" id="btn_Groupe" value="valider" /></p>
+
+
+
+        <form action="/" method="post" id="formulaire_chat">
+            Entrer votre message<input type="text" name="message" id="message" placeholder="Entrer votre message" />
+             <input type="submit" name="envoyer_message" id="envoi_message" value="Envoyer" />
+        </form>
+
+        <div id="zone_chat">
+            
+        </div>
+
+
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/acc.js"></script>
+    </body>
+</html>
+
